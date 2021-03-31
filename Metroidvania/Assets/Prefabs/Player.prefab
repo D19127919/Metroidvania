@@ -297,7 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b06a23b8b448c945bb023a425e05889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 8087423252119897857, guid: f89b1ad6a19c6a64593d1adab49b8620, type: 3}
+  projectile: {fileID: 8087423252119897857, guid: f89b1ad6a19c6a64593d1adab49b8620, type: 3}
 --- !u!58 &2195177894184543652
 CircleCollider2D:
   m_ObjectHideFlags: 0

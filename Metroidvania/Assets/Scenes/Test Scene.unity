@@ -1061,6 +1061,7 @@ GameObject:
   - component: {fileID: 800833290}
   - component: {fileID: 800833294}
   - component: {fileID: 800833295}
+  - component: {fileID: 800833296}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
@@ -1190,6 +1191,25 @@ MonoBehaviour:
   manager: {fileID: 1432221137}
   scoreToGive: 0
   IsEnemy: 1
+--- !u!114 &800833296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800833289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02354232395222a43bb8bb1556a10f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCheck: {fileID: 946885445}
+  playerLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  manager: {fileID: 1432221137}
+  scoreToGive: 0
+  IsEnemy: 0
 --- !u!4 &849656724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7215820212434609797, guid: aa3fa148ff00a4c4dbc6ff0253cbc3f3, type: 3}
@@ -1341,7 +1361,7 @@ Transform:
   m_Children:
   - {fileID: 790724312}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1666594018
 PrefabInstance:
@@ -1353,6 +1373,10 @@ PrefabInstance:
     - target: {fileID: 4924777829197846283, guid: aa3fa148ff00a4c4dbc6ff0253cbc3f3, type: 3}
       propertyPath: m_Name
       value: AI Patrol Point
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924777829197846283, guid: aa3fa148ff00a4c4dbc6ff0253cbc3f3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7215820212434609797, guid: aa3fa148ff00a4c4dbc6ff0253cbc3f3, type: 3}
       propertyPath: m_RootOrder
@@ -1411,6 +1435,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AI Patrol Point (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4924777829197846283, guid: aa3fa148ff00a4c4dbc6ff0253cbc3f3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7215820212434609797, guid: aa3fa148ff00a4c4dbc6ff0253cbc3f3, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1464,13 +1492,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 727536429075574204, guid: 43c06026cd1663340b81fa89dd5f8ea1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 727536429083389545, guid: 43c06026cd1663340b81fa89dd5f8ea1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 727536430438954184, guid: 43c06026cd1663340b81fa89dd5f8ea1, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 727536430438954184, guid: 43c06026cd1663340b81fa89dd5f8ea1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 727536430438954185, guid: 43c06026cd1663340b81fa89dd5f8ea1, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 727536430438954185, guid: 43c06026cd1663340b81fa89dd5f8ea1, type: 3}
       propertyPath: m_LocalPosition.x
