@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class FireBullets : MonoBehaviour
 {
-    public GameObject bullet;
-    
-    public void Shoot()
+    [SerializeField] private GameObject projectile;
+
+    public void Shoot(InputAction.CallbackContext context)
     {
-        Instantiate(bullet, transform.position, Quaternion.identity);
+        var bullet = Instantiate(projectile, transform.position, Quaternion.identity);
+        
+        Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
     }
 }

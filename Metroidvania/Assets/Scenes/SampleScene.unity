@@ -12142,6 +12142,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 727536430438954196, guid: 43c06026cd1663340b81fa89dd5f8ea1, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 727536430438954197, guid: 43c06026cd1663340b81fa89dd5f8ea1, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 8087423252119897857, guid: f89b1ad6a19c6a64593d1adab49b8620, type: 3}
     - target: {fileID: 727536430438954198, guid: 43c06026cd1663340b81fa89dd5f8ea1, type: 3}
       propertyPath: maxSpeed
       value: 20
