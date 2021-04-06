@@ -10,6 +10,9 @@ public class Player_Movement : MonoBehaviour
     [SerializeField] private Collider2D groundCheck;
     [SerializeField] private LayerMask groundLayers;
     [SerializeField] private bool cancelJumpEnabled;
+    public int MaxJump = 1;
+    private int JumpCount = 1;
+    
 
     private float moveDir;
     private Rigidbody2D myRB;
@@ -42,9 +45,15 @@ public class Player_Movement : MonoBehaviour
 
         if (groundCheck.IsTouchingLayers(groundLayers))
         {
+            JumpCount = MaxJump;
+
+        }
+
+        if (JumpCount > 0)
+        {
             canJump = true;
         }
-        else
+        else if (JumpCount < 1)
         {
             canJump = false;
         }
@@ -69,7 +78,9 @@ public class Player_Movement : MonoBehaviour
             {
                 myRB.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
                 canJump = false;
+                
             }
+            JumpCount--;
         }
 
         if (context.canceled && cancelJumpEnabled)
