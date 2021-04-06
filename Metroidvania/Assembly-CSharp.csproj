@@ -58,9 +58,9 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Player_Movement.cs" />
      <Compile Include="Assets\Scripts\PlayerCombat.cs" />
+     <Compile Include="Assets\Scripts\Player_Powerups.cs" />
      <Compile Include="Assets\Scripts\Player_Pickup.cs" />
      <Compile Include="Assets\Scripts\FireBullets.cs" />
-     <Compile Include="Assets\Scripts\Player_Powerups.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
