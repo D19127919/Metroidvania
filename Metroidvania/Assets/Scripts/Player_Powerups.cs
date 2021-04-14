@@ -12,6 +12,7 @@ public class Player_Powerups : MonoBehaviour
     [SerializeField] private bool Shoot = false;
     [SerializeField] private Player_Movement playermove;
     [SerializeField] private FireBullets shooter;
+    [SerializeField] private GameObject powerText;
 
     private void Update()
     {
@@ -28,7 +29,7 @@ public class Player_Powerups : MonoBehaviour
             {
                 shooter.canShoot = true;
             }
-
+            powerText.SetActive(true);
             Destroy(gameObject);
         }
     }
