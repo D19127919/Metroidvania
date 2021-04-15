@@ -5,15 +5,15 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637527370153092557
-    m_Hash: 2632323641
+      ticks: 637541051279585486
+    m_Hash: 3798307615
   m_LockFileStatus:
     m_FilePath: D:/Repo/Metroidvania/Metroidvania/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637540994586996238
+      ticks: 637541051679166873
     m_Hash: 1358993158
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
